@@ -1,12 +1,13 @@
-//variables
-let numeroSecreto = 6;
+//variables            //funcionalidad
+                 // dlDecimal #aleatrio(0-1)  rango quita0- añade el limite
+let numeroSecreto = Math.floor(Math.random() * 10) + 1;
 let numeroUsuario = 0;
 let intentos = 1;
 // let palabra = 'intento';
 let maxIntentos = 4;
 
 while(numeroUsuario!=numeroSecreto){
-    numeroUsuario = prompt("Adivina el número secreto entre 1 y 10:");
+    numeroUsuario = parseInt(prompt("Adivina el número secreto entre 1 y 10:"));
     
     console.log(numeroUsuario);
 
